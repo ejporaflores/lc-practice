@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="lyracons" translate="label" sortOrder="1">
+            <label>Lyracons</label>
+        </tab>
+        <section id="practice" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="1" translate="label">
+            <label>Practice</label>
+            <tab>lyracons</tab>
+            <resource>Lc_Practice::config</resource>
+
+            <group id="test" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Test</label>
+
+                <field id="search_attribute" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" type="text">
+                    <label>Search Attribute</label>
+                </field>
+
+                <field id="search_criteria" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" type="text">
+                    <label>Search Criteria</label>
+                </field>
+
+                <field id="order_field" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" type="text">
+                    <label>Order Field</label>
+                </field>
+
+                <field id="order_direction" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" type="text">
+                    <label>Order Direction</label>
+                </field>
+
+                <field id="limit" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" type="text">
+                    <label>Limit</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

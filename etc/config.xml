@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <practice>
+            <test>
+                <search_attribute>description</search_attribute>
+                <search_criteria>color</search_criteria>
+                <order_field>name</order_field>
+                <order_direction>desc</order_direction>
+                <limit>10</limit>
+            </test>
+        </practice>
+    </default>
+</config>

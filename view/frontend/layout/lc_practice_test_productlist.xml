@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Lc_Practice::css/test.css" />
+        <script src="Lc_Practice::js/test.js" />
+    </head>
+    <referenceContainer name="content">
+        <container name="productlist.container" htmlTag="div">
+            <block class="Lc\Practice\Block\Test\ProductList" name="lc_practice_productlist" template="Lc_Practice::productlist.phtml" />
+            <container name="productlist.content" htmlTag="div">
+                <block class="Lc\Practice\Block\Test\ProductList\Header" name="lc_practice_productlist_header" template="Lc_Practice::productlist/header.phtml" />
+                <block class="Lc\Practice\Block\Test\ProductList\Products" name="lc_practice_productlist_products" template="Lc_Practice::productlist/products.phtml" />
+            </container>
+        </container>
+    </referenceContainer>
+</page>

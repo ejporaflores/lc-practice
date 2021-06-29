@@ -1,0 +1,22 @@
+<?php
+
+    echo '<h3>' . get_class($this) . '</h3>';
+
+    /**
+     * @var \Lc\Practice\Block\Test\ProductList $block
+     */
+
+    //Criteria parameters: searchAttribute, searchCriteria, orderField, orderDirection, limit. Default NULL
+    $criteria = [
+        'searchAttribute' => NULL,
+        'searchCriteria'  => NULL,
+        'orderField'      => NULL,
+        'orderDirection'  => NULL,
+        'limit'           => NULL
+    ];
+    $products = $block->getProductsCollection($criteria);
+
+    foreach($products as $product) {
+        print_r( 'Nombre: ' . $product->getName() . ' | Id: ' . $product->getEntityId() . ' | Path: ' . $product->getImage());
+        echo '<br /><br />';
+    }
